@@ -25,7 +25,7 @@ pub fn part1() {
         }
     });
     let total_score = scores.sum::<u64>();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }
 
 pub fn part2() {
@@ -53,5 +53,5 @@ pub fn part2() {
         }
     });
     let total_score = scores.sum::<u64>();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }

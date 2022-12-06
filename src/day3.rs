@@ -15,7 +15,7 @@ pub fn part1() {
             .unwrap_or(0)
     });
     let total_score = scores.sum::<u64>();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }
 
 pub fn part2() {
@@ -24,7 +24,7 @@ pub fn part2() {
     let chunks = lines.chunks(3);
     let scores = chunks.map(|chunk| find_common_char(chunk).map(get_char_value).unwrap_or(0));
     let total_score = scores.sum::<u64>();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }
 
 fn find_common_char(strings: &[&str]) -> Option<char> {

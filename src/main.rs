@@ -5,8 +5,9 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
-const MAX_IMPLEMENTED_DAY: u8 = 5;
+const MAX_IMPLEMENTED_DAY: u8 = 6;
 const MAX_IMPLEMENTED_PART: u8 = 2;
 
 fn main() {
@@ -53,6 +54,8 @@ fn run_challenge(day: u8, part: u8) -> Result<(), String> {
         (4, 2) => day4::part2(),
         (5, 1) => day5::part1(),
         (5, 2) => day5::part2(),
+        (6, 1) => day6::part1(),
+        (6, 2) => day6::part2(),
         _ => {}
     }
     Ok(())

@@ -12,7 +12,7 @@ pub fn part1() {
         })
         .map(|x| if let Some(x) = x { x } else { false });
     let total_score = full_contains_list.filter(|x| *x).count();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }
 
 pub fn part2() {
@@ -27,7 +27,7 @@ pub fn part2() {
         })
         .map(|x| if let Some(x) = x { x } else { false });
     let total_score = partially_contains_list.filter(|x| *x).count();
-    println!("Total score: {}", total_score);
+    println!("Total score: {total_score}");
 }
 
 struct Range {
