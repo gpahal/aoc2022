@@ -3,7 +3,7 @@ use std::collections::VecDeque;
 use crate::utils::must_read_file;
 
 pub fn part1() {
-    let data = must_read_file("data/day6/part1.txt");
+    let data = must_read_file("data/day06/part1.txt");
     let chars = data.trim().chars().collect::<Vec<_>>();
     if chars.len() < 4 {
         println!("Not enough data");
@@ -14,7 +14,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day6/part2.txt");
+    let data = must_read_file("data/day06/part2.txt");
     let chars = data.trim().chars().collect::<Vec<_>>();
     if chars.len() < 14 {
         println!("Not enough data");

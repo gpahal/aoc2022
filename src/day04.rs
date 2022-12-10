@@ -1,7 +1,7 @@
 use crate::utils::must_read_file;
 
 pub fn part1() {
-    let data = must_read_file("data/day4/part1.txt");
+    let data = must_read_file("data/day04/part1.txt");
     let lines = data.trim().split("\n");
     let full_contains_list = lines
         .map(|line| {
@@ -16,7 +16,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day4/part2.txt");
+    let data = must_read_file("data/day04/part2.txt");
     let lines = data.trim().split("\n");
     let partially_contains_list = lines
         .map(|line| {

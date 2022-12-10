@@ -3,7 +3,7 @@ use std::{cmp::min, collections::VecDeque, str::Split};
 use crate::utils::must_read_file;
 
 pub fn part1() {
-    let data = must_read_file("data/day5/part1.txt");
+    let data = must_read_file("data/day05/part1.txt");
     let mut lines = data.split("\n");
     let mut crate_stacks = Vec::new();
     parse_crate_stacks(&mut crate_stacks, &mut lines);
@@ -47,7 +47,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day5/part2.txt");
+    let data = must_read_file("data/day05/part2.txt");
     let mut lines = data.split("\n");
     let mut crate_stacks = Vec::new();
     parse_crate_stacks(&mut crate_stacks, &mut lines);

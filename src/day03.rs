@@ -3,7 +3,7 @@ use std::collections::BTreeSet;
 use std::ops::BitAnd;
 
 pub fn part1() {
-    let data = must_read_file("data/day3/part1.txt");
+    let data = must_read_file("data/day03/part1.txt");
     let lines = data.trim().split("\n");
     let scores = lines.map(|line| {
         let len = line.len();
@@ -19,7 +19,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day3/part2.txt");
+    let data = must_read_file("data/day03/part2.txt");
     let lines = data.trim().split("\n").collect::<Vec<_>>();
     let chunks = lines.chunks(3);
     let scores = chunks.map(|chunk| find_common_char(chunk).map(get_char_value).unwrap_or(0));

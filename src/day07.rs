@@ -3,7 +3,7 @@ use std::{iter::repeat, str::Split};
 use crate::utils::must_read_file;
 
 pub fn part1() {
-    let data = must_read_file("data/day7/part1.txt");
+    let data = must_read_file("data/day07/part1.txt");
     let lines = data.trim().split("\n");
 
     let mut fs = FileSystem::new();
@@ -21,7 +21,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day7/part2.txt");
+    let data = must_read_file("data/day07/part2.txt");
     let lines = data.trim().split("\n");
 
     let mut fs = FileSystem::new();

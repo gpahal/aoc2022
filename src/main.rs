@@ -1,14 +1,14 @@
 mod utils;
 
-mod day1;
-mod day2;
-mod day3;
-mod day4;
-mod day5;
-mod day6;
-mod day7;
-mod day8;
-mod day9;
+mod day01;
+mod day02;
+mod day03;
+mod day04;
+mod day05;
+mod day06;
+mod day07;
+mod day08;
+mod day09;
 
 const MAX_IMPLEMENTED_DAY: u8 = 9;
 const MAX_IMPLEMENTED_PART: u8 = 2;
@@ -47,24 +47,24 @@ fn run(args: &[String]) -> Result<(), String> {
 
 fn run_challenge(day: u8, part: u8) -> Result<(), String> {
     match (day, part) {
-        (1, 1) => day1::part1(),
-        (1, 2) => day1::part2(),
-        (2, 1) => day2::part1(),
-        (2, 2) => day2::part2(),
-        (3, 1) => day3::part1(),
-        (3, 2) => day3::part2(),
-        (4, 1) => day4::part1(),
-        (4, 2) => day4::part2(),
-        (5, 1) => day5::part1(),
-        (5, 2) => day5::part2(),
-        (6, 1) => day6::part1(),
-        (6, 2) => day6::part2(),
-        (7, 1) => day7::part1(),
-        (7, 2) => day7::part2(),
-        (8, 1) => day8::part1(),
-        (8, 2) => day8::part2(),
-        (9, 1) => day9::part1(),
-        (9, 2) => day9::part2(),
+        (1, 1) => day01::part1(),
+        (1, 2) => day01::part2(),
+        (2, 1) => day02::part1(),
+        (2, 2) => day02::part2(),
+        (3, 1) => day03::part1(),
+        (3, 2) => day03::part2(),
+        (4, 1) => day04::part1(),
+        (4, 2) => day04::part2(),
+        (5, 1) => day05::part1(),
+        (5, 2) => day05::part2(),
+        (6, 1) => day06::part1(),
+        (6, 2) => day06::part2(),
+        (7, 1) => day07::part1(),
+        (7, 2) => day07::part2(),
+        (8, 1) => day08::part1(),
+        (8, 2) => day08::part2(),
+        (9, 1) => day09::part1(),
+        (9, 2) => day09::part2(),
         _ => {}
     }
     Ok(())

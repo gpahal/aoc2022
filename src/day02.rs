@@ -1,7 +1,7 @@
 use crate::utils::must_read_file;
 
 pub fn part1() {
-    let data = must_read_file("data/day2/part1.txt");
+    let data = must_read_file("data/day02/part1.txt");
     let lines = data.trim().split("\n");
     let scores = lines.map(|line| {
         let parts = line.split(" ").collect::<Vec<_>>();
@@ -29,7 +29,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let data = must_read_file("data/day2/part2.txt");
+    let data = must_read_file("data/day02/part2.txt");
     let lines = data.trim().split("\n");
     let scores = lines.map(|line| {
         let parts = line.split(" ").collect::<Vec<_>>();
